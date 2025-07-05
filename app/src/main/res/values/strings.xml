@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">853445266744</string>
+    <string name="google_api_key" translatable="false">AIzaSyBkfbUsh4W71dBmoAnUNYiNnjLB2aN0xhI</string>
+    <string name="google_app_id" translatable="false">1:853445266744:android:148dae54070522b54a05cd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBkfbUsh4W71dBmoAnUNYiNnjLB2aN0xhI</string>
+    <string name="google_storage_bucket" translatable="false">mobileproject-3e798.firebasestorage.app</string>
+    <string name="project_id" translatable="false">mobileproject-3e798</string>
+    <string name="google_maps_key">AIzaSyBfJ7RAhklIYZIjnMjhoYmkBwsAN6VPz9A</string>
+
+    <!-- Aplikasi -->
+    <string name="app_name">MobileProject</string>
+    <string name="checkout_title">Checkout</string>
+
+    <!-- UI Umum -->
+    <string name="desc_back_button">Tombol kembali</string>
+
+    <!-- Login & Register -->
+    <string name="hint_email">Masukkan email</string>
+    <string name="hint_password">Masukkan kata sandi</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+
+    <!-- Checkout Layout -->
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="pilih_waktu">Pilih Waktu Pengambilan / Pengiriman</string>
+    <string name="catatan_tambahan">Catatan Tambahan</string>
+    <string name="metode_pengiriman">Metode Pengiriman</string>
+    <string name="self_pickup">Self Pick-Up</string>
+    <string name="delivery">Delivery</string>
+    <string name="metode_pembayaran">Metode Pembayaran</string>
+    <string name="tunai">Tunai</string>
+    <string name="transfer">Transfer Bank</string>
+    <string name="total_default">Total Harga: Rp0</string>
+    <string name="konfirmasi">Konfirmasi Pesanan</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

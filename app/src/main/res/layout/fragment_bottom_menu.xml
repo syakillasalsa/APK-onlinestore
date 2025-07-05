@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom menu -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <!-- Home -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="24dp">
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_thought"
+                android:contentDescription="Home"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- Menu List (dipindahkan sebelum Cart) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="24dp">
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/goods"
+                android:contentDescription="Menu List"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu List"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- Cart (dipindahkan setelah Menu List) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="24dp">
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/shopping_cart"
+                android:contentDescription="Cart"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keranjang"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- Logout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgLogout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="Logout"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:textColor="#000000"
+                android:padding="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

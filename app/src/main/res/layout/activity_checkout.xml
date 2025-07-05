@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- RadioGroup Metode Pengiriman -->
+        <TextView
+            android:text="@string/metode_pengiriman"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPickup"
+                android:text="@string/self_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioDeliveryOption"
+                android:text="@string/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Alamat Pengiriman -->
+        <EditText
+            android:id="@+id/editAlamat"
+            android:hint="@string/alamat_pengiriman"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- Pilih Waktu -->
+        <EditText
+            android:id="@+id/editTime"
+            android:hint="@string/pilih_waktu"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Catatan tambahan -->
+        <EditText
+            android:id="@+id/editCatatan"
+            android:hint="@string/catatan_tambahan"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Metode Pembayaran -->
+        <TextView
+            android:text="@string/metode_pembayaran"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioTunai"
+                android:text="@string/tunai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioTransfer"
+                android:text="@string/transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/layout_tutorial_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#DDDDDD"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_tutorial_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutorial Pembayaran Transfer:\n1. Transfer ke rekening BCA 123-456-7890 a.n. PT Contoh\n2. Simpan bukti transfer\n3. Kirim bukti transfer ke nomor WA 0812xxxxxx"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Total Harga -->
+        <TextView
+            android:id="@+id/txtTotal"
+            android:text="@string/total_default"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Ongkir -->
+        <TextView
+            android:id="@+id/txtOngkir"
+            android:text="Ongkir: Rp0"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Tombol Konfirmasi -->
+        <Button
+            android:id="@+id/btnKonfirmasi"
+            android:text="@string/konfirmasi"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFF2F2"
+            android:backgroundTint="#19A7CE"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

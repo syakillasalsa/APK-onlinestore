@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_thought" />
+    <item
+        android:id="@+id/nav_cart"
+        android:title="Keranjang"
+        android:icon="@drawable/shopping_cart" />
+    <item
+        android:id="@+id/nav_menu"
+        android:title="Menu List"
+        android:icon="@drawable/goods" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout" />
+</menu>
